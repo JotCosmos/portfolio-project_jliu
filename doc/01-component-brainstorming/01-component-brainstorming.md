@@ -1,12 +1,11 @@
 # Portfolio Part 1: Component Brainstorming
 
-- **Name**: <!-- TODO: fill with first and last name (e.g., Brutus Buckeye) then delete this comment -->
-- **Dot Number**: <!-- TODO: fill with OSU dot number (e.g., buckeye.17) then delete this comment -->
-- **Due Date**: <!-- TODO: fill with due date and time (e.g., 10/17 @ 3:10 PM EST) then delete this comment -->
+- **Name**: Jenny Liu
+- **Dot Number**: Liu.12364
+- **Due Date**: 2/6/2026 @ 4:10 PM
 
 ## Assignment Overview
 
-<!-- TODO: read the assignment overview then delete this comment -->
 
 The overall goal of the portfolio project is to have you design and implement
 your own OSU component. There are no limits to what you choose to design and
@@ -29,8 +28,6 @@ implement.
 
 ## Assignment Checklist
 
-<!-- TODO: browse the checklist then delete this comment -->
-
 To be sure you have completed everything on this assignment, we have littered
 this document with TODO comments. You can browse all of them in VSCode by
 opening the TODOs window from the sidebar. The icon looks like a tree and will
@@ -52,8 +49,6 @@ to the tree diagram (you may remove this one as well):
 
 ## Assignment Learning Objectives
 
-<!-- TODO: read the assignment learning objectives then delete this comment -->
-
 Without learning objectives, there really is no clear reason why a particular
 assessment or activity exists. Therefore, to be completely transparent, here is
 what we're hoping you will learn through this particular aspect of the portfolio
@@ -66,8 +61,6 @@ project. Specifically, students should be able to:
    discipline
 
 ## Assignment Rubric: 10 Points
-
-<!-- TODO: read the assignment rubric then delete this comment -->
 
 Again, to be completely transparent, most of the portfolio project, except the
 final submission, is designed as a formative assessment. Formative assessments
@@ -106,23 +99,16 @@ Below is further rationale/explanation for the rubric items above:
 > brainstorming. Plus it helps us get to know you better! Feel free to share
 > images in this section.
 
-<!-- TODO: briefly talk about your interests then delete this comment.
-Also, protip: you can preview what your response looks like by hitting
-the magnifying glass icon in the upper-right corner or pressing CTRL+K and
-then V. This kind of button combination is called a chord, for whatever
-reason -->
+I play two instruments - piano and violin. I also like to listen to and compose music digitally. I know for sure I want at least one of my component ideas to be related to music. Some other hobbies include creative writing, playing video games, reading books, coding, and being outdoors! Additionally, I love animals. This partially comes from my dad being a biology professor! I currently have some pet zebra fish and goldfish, though I also raised platies and guppies in the past. Furthermore, I love volunteering. I used to be a scout, and I did tax volunteering throughout high school. Lastly, mentorship is also really important to me. I used to be a teacher assistant in high school, and I hope to continue at some point in college to help guide other students and make a positive difference!
+I am currently pursuing a double major in Data Analytics and Finance. My goal is to someday combine finance and technology to improve financial literacy and help community members make more informed decisions. Since I like teaching, I might also try to become a professor like my dad someday.
 
 ## Assignment
-
-<!-- TODO: read the assignment section then delete this comment -->
 
 As previously stated, you are tasked with brainstorming 3 possible components.
 To aid you in this process, we have provided [some example components][example-components]
 that may help you in your brainstorming. All of these components were made at
 some point by one of your peers, so you should feel confident that you can
 accomplish any of them.
-
-<!-- TODO: browse the list of possible projects then delete this comment -->
 
 There is no requirement that you use any of the components listed above.
 If you want to model something else, go for it! Very common early object
@@ -142,8 +128,6 @@ list-like components that have different ways of manipulating the data. Think
 about different ways you might allow a client to manipulate your component.
 
 ### Example Component
-
-<!-- TODO: review this example component then delete this comment -->
 
 To help you brainstorm a few components, we've provided an example below of a
 component you already know well: NaturalNumber. We highly recommend that you
@@ -211,68 +195,87 @@ will likely refine your design to make your implementation easier to use.
 
 > Please use this section to share your designs.
 
-- Component Design #1: <!-- TODO: give component a name then delete this comment -->
-  - **Description**:
-    - <!-- TODO: describe your component then delete this comment -->
-  - **Kernel Methods**:
-    - <!-- TODO: list kernel methods then delete this comment -->
-  - **Secondary Methods**:
-    - <!-- TODO: list secondary methods then delete this comment -->
-  - **Additional Considerations** (*note*: "I don't know" is an acceptable
-    answer for each of the following questions):
-    - Would this component be mutable? Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
-    - Would this component rely on any internal classes (e.g., `Map.Pair`)?
-      Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
-    - Would this component need any enums or constants (e.g.,
-      `Program.Instruction`)? Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
-    - Can you implement your secondary methods using your kernel methods?
-      Answer, explain, and give at least one example:
-      - <!-- TODO: provide an argument then delete this comment -->
+- Component Design #1: Animal
+  - **Description**: The purpose of this component is to model the health and status of an animal. The kernel methods include basic survival functions for the animal, while the secondary methods go in more depth for relationships with  other animals and data reporting.
 
-- Component Design #2: <!-- TODO: give component a name then delete this comment -->
-  - **Description**:
-    - <!-- TODO: describe your component then delete this comment -->
   - **Kernel Methods**:
-    - <!-- TODO: list kernel methods then delete this comment -->
-  - **Secondary Methods**:
-    - <!-- TODO: list secondary methods then delete this comment -->
-  - **Additional Considerations** (*note*: "I don't know" is an acceptable
-    answer for each of the following questions):
-    - Would this component be mutable? Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
-    - Would this component rely on any internal classes (e.g., `Map.Pair`)?
-      Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
-    - Would this component need any enums or constants (e.g.,
-      `Program.Instruction`)? Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
-    - Can you implement your secondary methods using your kernel methods?
-      Answer, explain, and give at least one example:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - `void feed()`: Fills up the animal's stomach, resetting its hunger.
+      - `void sleep()`: The animal gets a full night of sleep, increasing its health status.
+      - `void passTime(int x)`: Passes amount of time entered by user, and modifies the animal's hunger and health status, which both naturally decrease over time
+      - `boolean isAlive()`: Reports on whether the animal is currently alive or not.
+      - `String name()`: Returns the name of the current animal.
+      - `String species()`: Returns what species the current animal is.
+      - `double hunger()`: Returns the hunger level of the animal as a decimal. 1.00 means full, while 0 means starving.
+      - `double health()`: Returns the health level of the animal as a decimal. 1.00 means healthy, while 0 means extremely weak.
 
-- Component Design #3: <!-- TODO: give component a name then delete this comment -->
-  - **Description**:
-    - <!-- TODO: describe your component then delete this comment -->
-  - **Kernel Methods**:
-    - <!-- TODO: list kernel methods then delete this comment -->
   - **Secondary Methods**:
-    - <!-- TODO: list secondary methods then delete this comment -->
+    - `void reproduce(animal a)`: Given another animal of the same species and opposing gender, the two animals reproduce and create another animal.
+    - `String family()`: Returns a string of the names of all family members of the animal
+    - `String status()`: Returns a String containing the status of the animal, including its health and hunger.
   - **Additional Considerations** (*note*: "I don't know" is an acceptable
     answer for each of the following questions):
     - Would this component be mutable? Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
-    - Would this component rely on any internal classes (e.g., `Map.Pair`)?
-      Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - Yes, the component would be mutable. It is necessary for its internal state to be able to change certain for statistics like health, hunger, etc. to be modeled accurately
+    - Would this component rely on any internal classes (e.g., `Map.Pair`)? Answer and explain:
+      - The component might potentially need to rely on data structures for keeping track of a lot of data like lineage. For example, a stack might be useful for this.
     - Would this component need any enums or constants (e.g.,
       `Program.Instruction`)? Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - Potentially. An example of a constant could be the lifespan of the creature, like how long that species could live on average before it died of old age.
     - Can you implement your secondary methods using your kernel methods?
       Answer, explain, and give at least one example:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - I believe so. the "status" method can be implemented by calling the "hunger", "health", and "isAlive" kernel methods, and the "family" method can be implemented by calling the "name" method. I definitely think there are better method ideas that I could create or a way to perhaps combine some of the current ones, since there's a lot of kernel methods right now.
+
+- Component Design #2: Violin
+  - **Description**:
+    - The purpose of this component is to model the notes being played on a violin, depending on which finger is being used and what position the hand is in.
+  - **Kernel Methods**:
+    - `void nextString()`: Switches which violin string the player is using to the subsequent string. Goes from G to E, and if the player has reached the last string, it cycles back to the first one.
+    - `void play(SimpleWriter out)`: Reports which note would be produced based on finger positions and which string is being played.
+    - `void press(double d)`: Presses down on the current string using whichever finger is represented by double d. Requires that d is a number between 0 and 4 that is divisible by 0.5.
+  - **Secondary Methods**:
+    - `String switchString(String s)`: Switches which violin string the player is using to the entered String. Possible options include "G", "D", "A", and "E". (Would be implemented using nextString().)
+    - `void changePosition(double d)`: Switches which hand position the player is using on the current string, which in turn alters the notes being played. A higher position leads to higher notes. Ranges from 0 to 8 and must be divisble by 0.5.
+    - `static void doubleStop(String a, String b)`: Allows the player to play two strings at once. Note that these two strings must be consecutive (only G and D together, D and A, or A and E)
+  - **Additional Considerations** (*note*: "I don't know" is an acceptable
+    answer for each of the following questions):
+    - Would this component be mutable? Answer and explain:
+      - Yes, this component would be mutable. It is necessary to be able to modify values in keep track of which string is being played and which fingers are pressing down.
+    - Would this component rely on any internal classes (e.g., `Map.Pair`)?
+      Answer and explain:
+      - I'm not sure yet if this would require internal classes. It might need a class to represent an individual string.
+    - Would this component need any enums or constants (e.g.,
+      `Program.Instruction`)? Answer and explain:
+      - If I end up representing the different notes with numbers, the constants would probably be the base notes for each string (G, D, A, E)
+    - Can you implement your secondary methods using your kernel methods?
+      Answer, explain, and give at least one example:
+      - Yes, I am already planning on implementing switchString using nextString. changePosition might also be able to be implemented on top of press.
+
+- Component Design #3: WashingMachine
+  - **Description**:
+    - The purpose of this component is modeling a washing machine cycle and what clothes should go together. The user can add or remove various clothes inside the machine based on what kind of cycle they want (normal/gentle, cold/warm/hot, etc.) and then start the cycle.
+  - **Kernel Methods**:
+    - `void setCycle(String s)`: Allows the user to change the Washing Machine's cycle type. Options include "gentle", "normal", and "heavy duty"
+    - `String setTemperature(String s)`: Allows the user to change the temperature of the Washing Machine. Options include "cold", "warm", and "hot".
+    - `void add(Clothing c)`: Allows the user to add an article of clothing, so long as the clothing is compatible with the current cycle and type.
+    - `Clothing remove(String s)`: Removes an article of clothing matching the name entered as a string from the WashingMachine and returns it.
+    - `void clearMachine()`: Entirely removes all clothes from within the machine.
+  - **Secondary Methods**:
+    - `Clothing[] runCycle()`: WashingMachine runs a cycle, returns an array containing all clothes, and clears its contents.
+    - `String runHistory()`: Returns a list of past laundry runs and cycle types, including the clothing amount
+
+  - **Additional Considerations** (*note*: "I don't know" is an acceptable
+    answer for each of the following questions):
+    - Would this component be mutable? Answer and explain:
+      - Yes, it should be mutable. It is essential for us to be able to modify the contents of the washing machine so it can contain more or less clothing, keep track of its cycle type and temperature, etc.
+    - Would this component rely on any internal classes (e.g., `Map.Pair`)?
+      Answer and explain:
+      - I have an idea for an internal class called clothing, which could have a status of different clothing types (pants, shirts) and different properties (color, material)
+    - Would this component need any enums or constants (e.g.,
+      `Program.Instruction`)? Answer and explain:
+      - I'm honestly not sure if this would need any constants. WashingMachine may have default settings (normal and warm), which might both be integrated as constants.
+    - Can you implement your secondary methods using your kernel methods?
+      Answer, explain, and give at least one example:
+      - Yes, runCycle could maybe be integrated using clearMachine and/or remove
 
 ## Post-Assignment
 
@@ -280,8 +283,6 @@ The following sections detail everything that you should do once you've
 completed the assignment.
 
 ### Changelog
-
-<!-- TODO: create CHANGELOG then delete this comment -->
 
 At the end of every assignment, you should update the
 [CHANGELOG.md](../../CHANGELOG.md) file found in the root of the project folder.
@@ -320,8 +321,6 @@ of development.
 
 ### Submission
 
-<!-- TODO: read the submission instructions then delete this comment -->
-
 If you have completed the assignment using this template, we recommend that
 you convert it to a PDF before submission. If you're not sure how, check out
 this [Markdown to PDF guide][markdown-to-pdf-guide]. However, PDFs should be
@@ -330,11 +329,7 @@ all your work is there before submitting. For future assignments, you will
 just be submitting a link to a pull request. This will be the only time
 you have to submit any PDFs.
 
-<!-- TODO: upload a PDF of this document and the CHANGELOG to Carmen then delete this comment -->
-
 ### Peer Review
-
-<!-- TODO: review the peer review guidelines then delete this comment -->
 
 Following the completion of this assignment, you will be assigned three
 students' component brainstorming assignments for review. Your job during the
@@ -360,8 +355,6 @@ PDF to read this rubric as a table).
 If you'd like to give feedback for this assignment (or any assignment, really),
 make use of [this survey][survey]. Your feedback helps make assignments
 better for future students.
-
-<!-- TODO: follow the link to share your feedback then delete this comment -->
 
 [example-components]: https://therenegadecoder.com/code/the-never-ending-list-of-small-programming-project-ideas/
 [markdown-to-pdf-guide]: https://therenegadecoder.com/blog/how-to-convert-markdown-to-a-pdf-3-quick-solutions/
