@@ -1,12 +1,10 @@
 # Portfolio Part 2: Component Proof-of-Concept
 
-- **Name**: <!-- TODO: fill with first and last name (e.g., Brutus Buckeye) then delete this comment -->
-- **Dot Number**: <!-- TODO: fill with OSU dot number (e.g., buckeye.17) then delete this comment -->
-- **Due Date**: <!-- TODO: fill out with due date and time (e.g., 10/17 @ 3:10 PM EST) then delete this comment -->
+- **Name**: Jenny Liu
+- **Dot Number**: Liu.12364
+- **Due Date**: 2/26/2026
 
 ## Assignment Overview
-
-<!-- TODO: read the assignment overview then delete this comment -->
 
 Previously, you brainstormed three ideas, and hopefully you got some feedback as
 well. However, it's impossible to know how reasonable your design actually is
@@ -114,8 +112,13 @@ Below is further rationale/explanation for the rubric items above:
 > to create a new design. In you do end up picking one at random, you should
 > disclose that here as well.
 
-<!-- TODO: briefly argue your choice of design or design something
-new; then delete this comment -->
+
+Right now, I'm thinking that I would most like to move forward with either my Animal component idea or my Violin component. I've already disqualified WashingMachine, since while I do think it is an interesting concept, it doesn't feel as personal to me compared with the other two ideas.
+First, I feel that Animal would be pretty fun to try to implement, especially its lineage and children. It would also likely end up being more complicated, and I would need to flesh out the kernel to make it more logical. I like Jeremy's recommendation of combining some of the methods into a single update method and changing the attributes of the object.
+
+Meanwhile, Violin seems potentially more straightforward, as it would only deal with a single object. Since it would be a model of a specific item, it would be important for it to be accurate. However, dealing with the calculations for various notes and pitches could be a pain point, especially as you move higher up the individual violin string. Also, I'm slightly concerned about confusion being created by switching between references to Strings in a coding sense, and physical, steel violin strings.
+
+Based on considering all of these factors, I think I would like to move forward with the "Animal" concept. I feel like there is a lot of flexibility and paths I could take with implementing this component, which I like.
 
 > Once you've argued your choice of design, make a branch in your new repo called
 > something like `proof-of-concept`. There are many ways to do this, but my
