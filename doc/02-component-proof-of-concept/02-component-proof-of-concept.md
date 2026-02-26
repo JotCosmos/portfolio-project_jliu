@@ -28,8 +28,6 @@ the more work you can put in now, the better.
 
 ## Assignment Checklist
 
-<!-- TODO: browse the checklist then delete this comment -->
-
 To be sure you have completed everything on this assignment, we have littered
 this document with TODO comments. You can browse all of them in VSCode by
 opening the TODOs window from the sidebar. The icon looks like a tree and will
@@ -50,8 +48,6 @@ to the tree diagram (you may remove this one as well):
 ```
 
 ## Assignment Learning Objectives
-
-<!-- TODO: read the assignment learning objectives then delete this comment -->
 
 Without learning objectives, there really is no clear reason why a particular
 assessment or activity exists. Therefore, to be completely transparent, here is
@@ -112,7 +108,6 @@ Below is further rationale/explanation for the rubric items above:
 > to create a new design. In you do end up picking one at random, you should
 > disclose that here as well.
 
-
 Right now, I'm thinking that I would most like to move forward with either my Animal component idea or my Violin component. I've already disqualified WashingMachine, since while I do think it is an interesting concept, it doesn't feel as personal to me compared with the other two ideas.
 First, I feel that Animal would be pretty fun to try to implement, especially its lineage and children. It would also likely end up being more complicated, and I would need to flesh out the kernel to make it more logical. I like Jeremy's recommendation of combining some of the methods into a single update method and changing the attributes of the object.
 
@@ -128,8 +123,6 @@ Based on considering all of these factors, I think I would like to move forward 
 > VSCode to run git commands. It's entirely up to you. Regardless of your choice,
 > we'll want a branch that you can later make a pull request from with all
 > your changes.
-
-<!-- TODO: make a new branch from main then delete this comment -->
 
 ## Assignment Tasks
 
