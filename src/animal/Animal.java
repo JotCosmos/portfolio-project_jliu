@@ -1,3 +1,4 @@
+package animal;
 /**
  * {@code AnimalKernal} enhanced with secondary methods.
  */
