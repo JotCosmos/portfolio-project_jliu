@@ -9,7 +9,7 @@ import java.util.Scanner;
  *
  * @author Jenny Liu
  */
-public class Animal {
+public class Animal1 {
 
     /*
      * Private members --------------------------------------------------------
@@ -63,7 +63,7 @@ public class Animal {
      * No-argument constructor. Creates an unidentified, unnamed animal with
      * full stats.
      */
-    public Animal() {
+    public Animal1() {
         this.hunger = FULL;
         this.health = FULL;
         this.alive = true;
@@ -83,7 +83,7 @@ public class Animal {
      *            The gender of the animal.
      * @requires The gender of the animal is male or female.
      */
-    public Animal(String s, String n, String g) {
+    public Animal1(String s, String n, String g) {
         assert g.toLowerCase().equals("male") || g.toLowerCase()
                 .equals("female") : "Violation of: gender is male or female";
         this.hunger = FULL;
@@ -117,7 +117,7 @@ public class Animal {
      * @param a
      * @return The new animal
      */
-    public final Animal reproduce(Animal a) {
+    public final Animal1 reproduce(Animal1 a) {
         assert this.gender.equals(
                 a.gender) : "Violation of : the two animals have opposite genders";
         assert this.species.equals(
@@ -130,7 +130,7 @@ public class Animal {
         } else {
             gender = "female";
         }
-        Animal baby = new Animal(this.species, "Unnamed", gender);
+        Animal1 baby = new Animal1(this.species, "Unnamed", gender);
         return baby;
     }
 
@@ -202,7 +202,7 @@ public class Animal {
         System.out.println(
                 "Please enter the gender of the animal. (male or female)");
         String g = input.nextLine();
-        Animal animal1 = new Animal(s, n, g);
+        Animal1 animal1 = new Animal1(s, n, g);
         System.out.println("The current animal is " + animal1.name() + ".");
         System.out.println("Would you like to update " + animal1.name()
                 + "'s health or hunger? Please enter either \"health\" or \"hunger\".");
