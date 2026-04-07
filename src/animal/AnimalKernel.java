@@ -36,7 +36,7 @@ public interface AnimalKernel extends Standard<Animal> {
     int EMPTY = 0;
 
     /**
-     * 
+     *
      * those stats.
      *
      * @param stat
