@@ -1,3 +1,144 @@
 public class Animal1 extends AnimalSecondary {
+    /**
+     * Default highest integer representation of hunger and health.
+     */
+    int FULL = 100;
 
+    /**
+     * Lowest integer representation of hunger and health.
+     */
+    int EMPTY = 0;
+
+    /**
+     * Stores the hunger level of the animal.
+     */
+    private int hunger;
+
+    /**
+     * Stores the health level of the animal.
+     */
+    private int health;
+
+    /**
+     * Stores whether the animal is living or deceased.
+     */
+    private boolean alive;
+
+    /**
+     * Stores the species of the animal.
+     */
+    private String species;
+
+    /**
+     * Stores the name of the animal.
+     */
+    private String name;
+
+    /**
+     * Stores the gender of the animal.
+     */
+    private String gender;
+
+    /*
+     * Constructors -----------------------------------------------------------
+     */
+
+    /**
+     * No-argument constructor. Creates an unidentified, unnamed animal with
+     * full stats.
+     */
+    public Animal1() {
+        this.hunger = FULL;
+        this.health = FULL;
+        this.alive = true;
+        this.species = "Unindentified";
+        this.name = "Unnamed";
+        this.gender = "Unknown";
+    }
+
+    /**
+     * Constructor resulting in an animal with full stats, a name and a species.
+     *
+     * @param s
+     *            The species of the animal.
+     * @param n
+     *            The name of the animal.
+     * @param g
+     *            The gender of the animal.
+     * @requires The gender of the animal is male or female.
+     */
+    public Animal1(String s, String n, String g) {
+        assert g.toLowerCase().equals("male") || g.toLowerCase()
+                .equals("female") : "Violation of: gender is male or female";
+        this.hunger = FULL;
+        this.health = FULL;
+        this.alive = true;
+        this.species = s;
+        this.name = n;
+        this.gender = g;
+    }
+
+    /**
+     * Updates a given numerical stat, like hunger and health, based on the
+     * inputted int, as well as whether the animal is living or not based on
+     * those stats.
+     *
+     * @param stat
+     *            The stat that will be updated
+     * @param n
+     *            The new value that the stat will be changed to
+     * @requires 0 <= n <= 100 and stat.equals("hunger") ||
+     *           stat.equals("health")
+     * @ensures The given animal stat is updated to the correct value.
+     */
+    void update(String stat, int n){
+
+    }
+
+    /**
+     * Updates a given word stat, like species, name, or gender, given that the
+     * current is unknown.
+     *
+     * @param stat
+     *            The stat that will be updated
+     * @param s
+     *            The new word that the stat will be changed to
+     * @requires (stat.equals("species") || stat.equals("name") ||
+     *           stat.equals("gender")) && s.equals("Unknown")
+     * @ensures The given animal stat is updated to the correct value.
+     */
+    void update(String stat, String s);
+
+    /**
+     * Returns a boolean containing whether the animal is living.
+     *
+     * @return true if alive, false if not.
+     * @ensures {@code isAlive = this.isAlive}
+     */
+    boolean isAlive();
+
+    /**
+     * Returns the species of the animal.
+     *
+     * @return this animal's species.
+     * @ensures {@code species = this.species}
+     */
+    String species();
+
+    /**
+     * Returns the name of the animal.
+     *
+     * @return this animal's name.
+     * @ensures {@code name = this.name}
+     */
+    String name();
+
+    /**
+     * Returns the current family tree of this animal as a Tree<Animal>.
+     *
+     * @return a tree containing family members of the animal.
+     * @ensures {@code familyTree = a Tree<Animal> with all family members of
+     * this}
+     */
+    Tree<Animal> familyTree();
 }
