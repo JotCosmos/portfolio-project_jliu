@@ -1,4 +1,7 @@
 package animal;
+
+import components.tree.Tree;
+
 /**
  * {@code AnimalKernal} enhanced with secondary methods.
  */
@@ -30,9 +33,14 @@ public interface Animal extends AnimalKernel {
      * Creates and returns a string containing the names of all of the family
      * members of this.
      *
+     * @param t
+     *            The tree of animals to be converted into a string
+     * @param d
+     *            The depth of the tree to help with managing relationships
+     * @requires d >= 0
      * @return a String containing the names of the family members of this.
      * @ensures {@code family = a String with family member names}
      */
-    String family();
+    String family(Tree<Animal> t, int d);
 
 }

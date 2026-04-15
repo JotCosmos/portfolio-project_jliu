@@ -36,8 +36,7 @@ public interface AnimalKernel extends Standard<Animal> {
     int EMPTY = 0;
 
     /**
-     * Updates a given numerical stat, like hunger and health, based on the
-     * inputted int, as well as whether the animal is living or not based on
+     *
      * those stats.
      *
      * @param stat
@@ -87,6 +86,30 @@ public interface AnimalKernel extends Standard<Animal> {
      * @ensures {@code name = this.name}
      */
     String name();
+
+    /**
+     * Returns the gender of the animal.
+     *
+     * @return this animal's gender.
+     * @ensures {@code name = this.gender}
+     */
+    String gender();
+
+    /**
+     * Returns the health of the animal.
+     *
+     * @return this animal's health.
+     * @ensures {@code name = this.health}
+     */
+    int health();
+
+    /**
+     * Returns the hunger of the animal.
+     *
+     * @return this animal's hunger.
+     * @ensures {@code name = this.hunger}
+     */
+    String hunger();
 
     /**
      * Returns the current family tree of this animal as a Tree<Animal>.

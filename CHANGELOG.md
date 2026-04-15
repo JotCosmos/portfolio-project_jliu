@@ -6,6 +6,17 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Calendar Versioning](https://calver.org/) of
 the following form: YYYY.0M.0D.
 
+## 2026.04.01
+
+### Added
+
+- Designed abstract class for Animal component
+
+### Updated
+
+- Changed design for family method in Animal, requiring input of both a Tree<Animal> and integer of current level so the method could add to the family string recursively.
+- Modified kernel design to add methods to return more values (e.g. gender)
+
 ## 2026.03.16
 
 ### Added
